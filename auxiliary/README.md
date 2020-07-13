@@ -1,4 +1,4 @@
-This folder contains code that I developed during my thesis. They are not crucial to running the final pipeline, but I'm adding them here for anyone that might find them useful.
+This folder contains additional code that I developed during my thesis. They are not crucial to running the final pipeline, but I'm adding them here for anyone that might find them useful.
 
 **NOTE**: This folder is not particularly maintained. However, there may be some functions that might be useful for other projects. 
 
