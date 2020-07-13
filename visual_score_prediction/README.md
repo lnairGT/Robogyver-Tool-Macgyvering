@@ -1,3 +1,5 @@
+# Predicting Scores Using Pre-trained Models
+
 This folder contains the code for predicting shape, material and attachment scores from pre-trained models. It takes features stored in csv files and predicts score using the pre-trained models:
 
 - **pre-extracted-features**: This folder contains csv files that store ESF features for the 58 point clouds in the dataset (`pre-extracted-features\ESF_features`). It also contains the SCiO readings extracted for the different objects (`pre-extracted-features\unprocessed_SCiO_files`). These are used by the `score_predict.py` to compute shape and material scores.
