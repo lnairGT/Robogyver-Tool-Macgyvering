@@ -1,6 +1,7 @@
 # Tool_Macgyvering
 
 Thesis: **Autonomous Tool Macgyvering for Inventive Problem Solving**
+
 Advisor: Dr. Sonia Chernova
 
 
