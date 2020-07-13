@@ -10,6 +10,12 @@ This is a 640-D vector of values that represents the shape of the point cloud. S
 For more details on the application of the different features for tool construction, see my paper **Nair, Lakshmi, et al. "Autonomous Tool Construction Using Part Shape and Attachment Prediction."**
 Robotics: Science and Systems. 2019.
 
+**Material: SCiO features**
+
+For the material prediction, we use a handheld spectrometer that outputs a 331-D vector of real values indicating spectral intensities. For more details on this work, please refer to Zackory Erickson's work with spectral sensing (SMM50 dataset), available [HERE](https://github.com/Healthcare-Robotics/smm50)
+
+His paper: **Z. Erickson, N. Luskey, S. Chernova, and C. C. Kemp, "Classification of Household Materials via Spectroscopy"**, 
+IEEE Robotics and Automation Letters (RA-L), 2019.
 
 
 
