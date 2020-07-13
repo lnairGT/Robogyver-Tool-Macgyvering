@@ -1,3 +1,5 @@
+# Extracting ESF Features from Point Clouds
+
 This folder contains C++ code for computing ESF, SHOT-C and SHOT-A features. We use PCL's existing functions to do this. Each code takes in a folder that stores point clouds for which the features need to be computed. Once the features are computed, they are saved onto .csv files.
 
 In my thesis, I found ESF features to work really well. So my final pipeline uses ESF features for shape scoring. However, I've included the SHOT features for completeness. 
