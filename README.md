@@ -1,6 +1,7 @@
 # AUTONOMOUS TOOL MACGYVERING FOR INVENTIVE PROBLEM SOLVING (THESIS WORK)
 
 Advisor: Dr. Sonia Chernova, Robot Autonomy and Interactive Learning ([RAIL](http://rail.gatech.edu/)) lab
+
 Collaborators: Nithin Shrivatsav, Zackory Erickson, Jonathan Balloch
 
 This repository contains code and datasets that were developed for my Ph.D. thesis at Georgia Institute of Technology. The goal of this work is to enable a robot to construct tools from a given set of parts. The high level approach is to compute a multi-objective function that includes the shape and material fitness of the parts for constructing the tool. Additionally, the multi-objective function includes a score that indicates whether the parts can be attached in the desired configuration. Given the three values, the robot scores the different object combinations for tool construction. 
