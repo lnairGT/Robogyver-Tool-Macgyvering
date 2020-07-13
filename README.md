@@ -7,7 +7,17 @@ Advisor: Dr. Sonia Chernova, Robot Autonomy and Interactive Learning ([RAIL](htt
 
 This repository contains code and datasets that were developed for my Ph.D. thesis at Georgia Institute of Technology.
 
-See our paper: To be posted soon!
+
+**PAPERS**
+
+If you find our work useful, please consider citing the following papers:
+
+- Nair, Lakshmi, et al. "Autonomous Tool Construction Using Part Shape and Attachment Prediction." Robotics: Science and Systems. 2019.
+- Nair, Lakshmi, Jonathan Balloch, and Sonia Chernova. "Tool macgyvering: Tool construction using geometric reasoning." 2019 International Conference on Robotics and Automation (ICRA). IEEE, 2019.
+
+Thanks!
+
+**REPOSITORY OUTLINE**
 
 This repository has the following folders:
 - tool_construction_taskPlanner
@@ -53,14 +63,4 @@ This folder contains 58 point clouds corresponding to the objects that we tested
 **6) Auxiliary-code**
 
 The code in this folder include additional models that were developed during the course of this research. This includes dual neural networks that were built for shape and material matching. 
-
-
-**PAPERS**
-
-If you use our work, please consider citing the following papers:
-
-- Nair, Lakshmi, et al. "Autonomous Tool Construction Using Part Shape and Attachment Prediction." Robotics: Science and Systems. 2019.
-- Nair, Lakshmi, Jonathan Balloch, and Sonia Chernova. "Tool macgyvering: Tool construction using geometric reasoning." 2019 International Conference on Robotics and Automation (ICRA). IEEE, 2019.
-
-Thanks!
  
