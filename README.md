@@ -17,9 +17,6 @@ This repository has the following folders:
 - Training-models
 - Auxiliary 
 
-
-**FIGURE**
-
 **1) tool_construction_taskPlanner**
 
 This folder contains code for performing task planning for tasks that involve tool construction. This code is adapted from the wonderful **pyperplan** (See [Here](https://github.com/aibasel/pyperplan)). The general idea here is to compute *some* score that indicates how good object combinations are for constructing tools, and use that score within the planner. We have the following sub-folders that facilitate this:
@@ -57,4 +54,13 @@ This folder contains 58 point clouds corresponding to the objects that we tested
 
 The code in this folder include additional models that were developed during the course of this research. This includes dual neural networks that were built for shape and material matching. 
 
+
+**PAPERS**
+
+If you use our work, please consider citing the following papers:
+
+- Nair, Lakshmi, et al. "Autonomous Tool Construction Using Part Shape and Attachment Prediction." Robotics: Science and Systems. 2019.
+- Nair, Lakshmi, Jonathan Balloch, and Sonia Chernova. "Tool macgyvering: Tool construction using geometric reasoning." 2019 International Conference on Robotics and Automation (ICRA). IEEE, 2019.
+
+Thanks!
  
