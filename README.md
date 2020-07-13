@@ -2,7 +2,7 @@
 
 Thesis: **Autonomous Tool Macgyvering for Inventive Problem Solving**
 
-Advisor: Dr. Sonia Chernova
+Advisor: Dr. Sonia Chernova, Robot Autonomy and Interactive Learning ([RAIL](http://rail.gatech.edu/)) lab
 
 
 This repository contains code and datasets that were developed for my Ph.D. thesis at Georgia Institute of Technology.
