@@ -4,12 +4,12 @@ This folder contains 58 point clouds that were used for testing the tool constru
 
 The objects in the dataset alongside their point cloud labels are as follows:
 
-![Dataset1](dataset_p1.jpg)
+![Dataset1](dataset_p1.JPG)
 
-![Dataset2](dataset_p2.jpg)
+![Dataset2](dataset_p2.JPG)
 
-![Dataset3](dataset_p3.jpg)
+![Dataset3](dataset_p3.JPG)
 
-![Dataset4](dataset_p4.jpg)
+![Dataset4](dataset_p4.JPG)
 
 
