@@ -68,3 +68,9 @@ The code in this folder include additional models that were developed during the
 Here are some of the tools constructed by our approach. You can also find videos of this work [HERE](https://www.youtube.com/watch?v=1XhS3Ljduts&t)
 
 ![Tools constructed by our work](tool_collage.png)
+
+Nair2019a - Nair, Lakshmi, Jonathan Balloch, and Sonia Chernova. "Tool macgyvering: Tool construction using geometric reasoning." 2019 International Conference on Robotics and Automation (ICRA). IEEE, 2019.
+
+Nair 2019b - Nair, Lakshmi, et al. "Autonomous Tool Construction Using Part Shape and Attachment Prediction." Robotics: Science and Systems. 2019.
+
+Current - Latest work on tool construction (using ESF features for shape, SCiO for materials, and attachment predictions for the final tool construction pipeline)
