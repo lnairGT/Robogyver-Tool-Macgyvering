@@ -15,7 +15,7 @@ import util
 
 scale = 'scaler'
 classifier = 'nn'
-predictPiercability = True
+predictPiercability = True # Whether to train for pierceability
 
 
 materials = ['plastic', 'fabric', 'paper', 'wood', 'metal', 'foam']
@@ -80,9 +80,7 @@ for iteration, (train_index, test_index) in enumerate(skf.split(X, y)):
         scaler = StandardScaler() if scale == 'scale' else Normalizer()
         X_train = scaler.fit_transform(X_train)
         X_test = scaler.transform(X_test)
-        # print np.min(X_train), np.max(X_train)
-        # print np.min(X_test), np.max(X_test)
-
+        
     if classifier == 'svm':
         model = SVC(C=1, kernel='rbf')
         model.fit(X_train, y_train)
@@ -92,30 +90,29 @@ for iteration, (train_index, test_index) in enumerate(skf.split(X, y)):
         y_train = to_categorical(y_train, num_classes)
         y_test = to_categorical(y_test, num_classes)
 
-        model = Sequential()
-        model.add(Dense(256, activation='relu', input_shape=(np.shape(X_train)[-1],)))
-        # model.add(Dropout(0.2))
-        model.add(Dense(256, activation='relu'))
-        # model.add(Dropout(0.2))
-        model.add(Dense(num_classes, activation='softmax'))
+        if predictPiercability:
+            # Network architecture for pierceability prediction
+            model = Sequential()
+            model.add(Dense(256, activation='relu', input_shape=(np.shape(X_train)[-1],)))
+            # model.add(Dropout(0.2))
+            model.add(Dense(256, activation='relu'))
+            # model.add(Dropout(0.2))
+            model.add(Dense(num_classes, activation='softmax'))
+        else:
+            # Network architecture for material prediction
+            d = [64]*2 + [32]*2
+            model = Sequential()
+            model.add(Dense(d[0], activation='linear', input_dim=np.shape(X)[-1]))
+            model.add(Dropout(0.25))
+            model.add(LeakyReLU())
+            for dd in d[1:]:
+                model.add(Dense(dd, activation='linear'))
+                model.add(Dropout(0.25))
+                model.add(LeakyReLU())
+            model.add(Dense(materialCount, activation='softmax'))
 
-        # d = [64]*2 + [32]*2
-        # model = Sequential()
-        # model.add(Dense(d[0], activation='linear', input_dim=np.shape(X)[-1]))
-        # # model.add(Dropout(0.05))
-        # model.add(Dropout(0.25))
-        # model.add(LeakyReLU())
-        # for dd in d[1:]:
-        #     model.add(Dense(dd, activation='linear'))
-        #     # model.add(Dropout(0.05))
-        #     model.add(Dropout(0.25))
-        #     model.add(LeakyReLU())
-        # model.add(Dense(materialCount, activation='softmax'))
-        # model.compile(loss='categorical_crossentropy', optimizer=Adam(lr=0.0005), metrics=['accuracy'])
-
-        # Adam(lr=0.0001)
+            
         model.compile(loss='categorical_crossentropy' if not predictPiercability else 'binary_crossentropy', optimizer='adam', metrics=['accuracy'])
-
         model.fit(X_train, y_train, batch_size=16, epochs=20, verbose=1, validation_data=(X_test, y_test))
 
         loss, accuracy = model.evaluate(X_test, y_test, verbose=1)
