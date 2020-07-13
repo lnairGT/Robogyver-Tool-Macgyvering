@@ -28,10 +28,10 @@ This folder contains code for performing task planning for tasks that involve to
 
 **2) visual_score_prediction**
 
-This folder contains code that takes pre-trained models to predict and save the scores in csv files that are used by the task planner above. This folder does not contain code for training the models. Instead, for generating csv files from trained models. 
--`score_predict.py` contains functions that take in ESF features and SCiO readings to predict scores, and save them onto .csv files for use by the task planner.
--`pre-extracted-features` contains raw, unprocessed SCiO readings and ESF features that can be used by the `score_predict.py` functions.
--`pre-trained-models` contains joblib, h5 files for the trained models for material, attachment and shape predictions that are used by the `score_predict.py` functions.
+This folder contains code that takes pre-trained models to predict and save the scores in csv files that are used by the task planner above. This folder does not contain code for training the models. Instead, for generating csv files from trained models.
+- `score_predict.py` contains functions that take in ESF features and SCiO readings to predict scores, and save them onto .csv files for use by the task planner.
+- `pre-extracted-features` contains raw, unprocessed SCiO readings and ESF features that can be used by the `score_predict.py` functions.
+- `pre-trained-models` contains joblib, h5 files for the trained models for material, attachment and shape predictions that are used by the `score_predict.py` functions.
 
 **3) feature_extraction**
 
