@@ -18,6 +18,8 @@ Thanks!
 ## REPOSITORY OUTLINE
 
  **STEPS!! _ TO DO!!**
+ 
+ **GROUND TRUTH FOR TOOL CONSTRUCTION**
 
 This repository has the following folders:
 - tool_construction_taskPlanner
