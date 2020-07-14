@@ -54,7 +54,7 @@ This folder contains code for training models for performing shape, material and
 You can use any model you'd like to do this. Ultimately, you would need three models here:
 - **Shape predictor**: Model that maps shape to function. A model that takes an input point cloud and predicts a score indicating how appropriate the input is for performing some function. This is similar to the idea of Affordance learning. You could use PointNet, PointNet++, AffordanceNet or any model of your choice to do this. 
 - **Material predictior**: Model for material classification. A model that takes some input (spectral readings in our case, but you can also use textures/images), and predicts a score indicating how appropriate the material is for performing some function. 
-- **Attachment predictor**: Model that predicts pierce-ability of a given material through binary classification. Your model should take some input (spectral reading in our case), and output a binary label indicating whether the material is pierceable. 
+- **Attachment predictor**: Model that predicts pierce-ability and grasp-ability of a given material through binary classification. Your model should take some input (spectral reading for pierce-ability in our case), and output a binary label indicating whether the material is pierceable or graspable. We train separate models for each attachment type, i.e., one model for pierce prediction and another for grasp prediction.
 
 With these three models, you can compute a final score as described in our paper and use it with the task planner. We use existing models and approaches for some of these cases, and you can find more details on them in the folder.
 
