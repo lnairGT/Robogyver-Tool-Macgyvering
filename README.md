@@ -17,6 +17,8 @@ Thanks!
 
 ## REPOSITORY OUTLINE
 
+ **STEPS**
+
 This repository has the following folders:
 - tool_construction_taskPlanner
 - visual_score_prediction
