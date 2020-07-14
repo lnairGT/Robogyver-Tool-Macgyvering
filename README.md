@@ -69,7 +69,7 @@ The code in this folder include additional models that were developed during the
  
 ## Results From Our Work
 
-Here are some of the tools constructed by our approach. Accuracy indicates the number of tools that the approach successfully constructed (out of the 60). You can also find videos of this work [HERE](https://www.youtube.com/watch?v=1XhS3Ljduts&t)
+Here are some of the tools constructed by our approach. Accuracy indicates the number of tools that the approach successfully constructed (out of the 60). You can also find videos of this work on Youtube [https://www.youtube.com/watch?v=1XhS3Ljduts&t](https://www.youtube.com/watch?v=1XhS3Ljduts&t)
 
 ![Tools constructed by our work](tool_collage.png)
 
