@@ -1,0 +1,25 @@
+
+
+;; obj4 and obj5 maps to 
+;; two specific objects in the test set
+
+(grab strawberry fridge)
+(grab salt table)
+(grab eggs fridge)
+(grab knife cabinet)
+(grab icecream freezer)
+(pour eggs bowl)
+(stir eggs bowl scoop)
+(spray pan oil-can)
+(transfer eggs bowl pan)
+(fry eggs pan)
+(join-spatula obj4 obj5)
+(flip eggs pan spatula)
+(transfer eggs pan plate0)
+(add salt eggs)
+(wash strawberry)
+(cut strawberry knife)
+(pour strawberry blender)
+(blend strawberry blender)
+(transfer strawberry blender glass)
+(scoop icecream strawberry scoop)
