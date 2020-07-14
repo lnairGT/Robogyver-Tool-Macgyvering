@@ -1,4 +1,4 @@
-# AUTONOMOUS TOOL MACGYVERING FOR INVENTIVE PROBLEM SOLVING (THESIS WORK)
+# Autonomous Tool Macgyvering for Inventive Problem Solving (Thesis Work)
 
 **Advisor**: Dr. Sonia Chernova, Robot Autonomy and Interactive Learning ([RAIL](http://rail.gatech.edu/)) lab
 
@@ -6,7 +6,7 @@
 
 This repository contains code and datasets that were developed for my Ph.D. thesis at Georgia Institute of Technology. The goal of this work is to enable a robot to construct tools from a given set of parts. The high level approach is to compute a multi-objective function that includes the shape and material fitness of the parts for constructing the tool. Additionally, the multi-objective function includes a score that indicates whether the parts can be attached in the desired configuration. Given the three values, the robot scores the different object combinations for tool construction. 
 
-## PAPERS
+## Papers
 
 If you find our work useful, please consider citing the following papers:
 
@@ -15,7 +15,7 @@ If you find our work useful, please consider citing the following papers:
 
 Thanks!
 
-## REPOSITORY OUTLINE
+## Repository Outline
 
  **STEPS!! _ TO DO!!**
  
@@ -67,7 +67,7 @@ This folder contains 58 point clouds corresponding to the objects that we tested
 The code in this folder include additional models that were developed during the course of this research. This includes dual neural networks that were built for shape and material matching. 
  
  
-## RESULTS FROM OUR WORK
+## Results From Our Work
 
 Here are some of the tools constructed by our approach. You can also find videos of this work [HERE](https://www.youtube.com/watch?v=1XhS3Ljduts&t)
 
