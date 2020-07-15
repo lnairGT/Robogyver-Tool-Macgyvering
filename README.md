@@ -6,6 +6,8 @@
 
 This repository contains code and datasets that were developed for my Ph.D. thesis at Georgia Institute of Technology. The goal of this work is to enable a robot to construct tools from a given set of parts. The high level approach is to compute a multi-objective function that includes the shape and material fitness of the parts for constructing the tool. Additionally, the multi-objective function includes a score that indicates whether the parts can be attached in the desired configuration. Given the three values, the robot scores the different object combinations for tool construction. 
 
+*NOTE: This work uses the SCiO handheld spectrometer available at [https://www.consumerphysics.com/](https://www.consumerphysics.com/)
+
 ## Papers
 
 If you find our work useful, please consider citing the following papers:
