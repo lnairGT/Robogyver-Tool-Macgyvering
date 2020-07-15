@@ -15,7 +15,7 @@ The goal of this work is to enable existing planning algorithms to efficiently p
     - `grasp.csv` contains the number of grasp locations that were sampled for each of the 58 point clouds
     - `magnets.csv` specifies the number of magnets that are present on the objects
     - `pierce.csv` specifies a binary label indicating whether a given object is pierceable
-    - `material_class.csv` specifies a score indicating the fitness of a given object for performing the different actions, e.g., wood_block_stack (made of wood) has a score of 0.99 for performing the actions `hit`, `scoop`, `rake`, and `flip`. The score `inf` indicates that the object material is not suited for the specific action
+    - `material_class.csv` specifies a score indicating the fitness of a given object for performing the different actions, e.g., the object `wood_block_stack.ply` (made of wood) has a score of 0.99 for performing the actions hit, scoop, rake, and flip. The score `inf` indicates that the object material is not suited for the specific action
     - Similarly, `shape.csv` specifies a score indicating the fitness of a given object for performing the specified actions. 
   
 - `tests` contains PDDL domain and problem definitions for three domains: Assembly, cooking and cleaning. Within each domain, there are two separate tasks that each require one tool to be constructed. For example, the problem file `tests/assembly/hit/task01.pddl` requires the construction of a hammer, and the problem file `tests/cooking/flip/task01.pddl` requires the construction of a spatula. The final task plan solution is saved in the corresponding folder with the extension `.pddl.soln`. 
