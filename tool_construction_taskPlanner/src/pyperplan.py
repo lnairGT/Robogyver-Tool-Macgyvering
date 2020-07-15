@@ -234,7 +234,7 @@ if __name__ == '__main__':
     argparser.add_argument('-f', '--folder', default='1', help='Select folder number')
     argparser.add_argument('-vs', '--visual_search', action='store_true', help='Run visual search with heuristic')
     argparser.add_argument('-vso', '--no_ff', action='store_true', help='Run visual search without heuristic')
-    argparser.add_argument('-st', '--trust', action='store_true', default=False, help='Trust sensors completely')
+    argparser.add_argument('-st', '--trust', action='store_true', default=False, help='Trust sensors partially')
 
     args = argparser.parse_args()
 
