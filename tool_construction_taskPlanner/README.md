@@ -40,4 +40,7 @@ Example: To run A* search with landmarks heuristic and visual scoring, on folder
 To run weighted A* with only visual scoring and no heuristic, on folder 8 of scoop for cooking tasks, do the following:
 `python src\pyperplan.py -s wastar -vso -f 8 -t scoop tests\cooking\domain.pddl tests\cooking\scoop\task01.pddl`
 
+To only partially trust the sensors (Specified in conjunction with `-vs` or `-vso` parameters):
+`python src\pyperplan.py -s astar -H landmark -vs -st -f 5 -t rake tests\cleaning\domain.pddl tests\cleaning\rake\task01.pddl`
+
 If a plan is found, it will be displayed with the actual names of the point clouds that are used to construct the tool. 
