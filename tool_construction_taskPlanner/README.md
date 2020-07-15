@@ -6,7 +6,9 @@ The goal of this work is to enable existing planning algorithms to efficiently p
 
 ## Folder Outline
 
-
+- `src` folder contains the main components of the algorithm. This code is adapted from **Pyperplan** ([https://github.com/aibasel/pyperplan](https://github.com/aibasel/pyperplan)). The modified components of Pyperplan include `search/astar.py`, `search/enforced_hillclimbing_search.py` and `pyperplan.py`. The new files that are included are `object_score.py` and `planner_interface.py`. 
+  - `search/astar.py` and `search/enforced_hillclimbing_search.py` have been modified to include the visual score computation. 
+  - `pyperplan.py` has been modified to add supporting functions, and arguments that the user can specify (More details on this in [Run Instructions](#Run Instructions)).
 
 ## Code Specifics
 
