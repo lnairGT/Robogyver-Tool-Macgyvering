@@ -4,7 +4,7 @@
 
 **Collaborators**: Nithin Shrivatsav, Zackory Erickson, Jonathan Balloch
 
-This repository contains code and datasets that were developed for my Ph.D. thesis at Georgia Institute of Technology. The goal of this work is to enable a robot to construct tools from a given set of parts. The high level approach is to compute a multi-objective function that includes the shape and material fitness of the parts for constructing the tool. Additionally, the multi-objective function includes a score that indicates whether the parts can be attached in the desired configuration. Given the three values, the robot scores the different object combinations for performing tool construction. 
+This repository contains code and datasets that were developed for my Ph.D. thesis at Georgia Institute of Technology. The goal of this work is to enable a robot to construct tools from a given set of parts. The high level approach is to compute a multi-objective function that includes the shape and material fitness of the parts for constructing the tool. Additionally, the multi-objective function includes a score that indicates whether the parts can be attached in the desired configuration. Given the three values, the robot scores the different object combinations for performing tool construction. We integrate the multi-objective function with a task planner to efficiently generate plans for tasks that involve tool construction. 
 
 *NOTE: This work uses the SCiO handheld spectrometer available at* [https://www.consumerphysics.com/](https://www.consumerphysics.com/)
 
@@ -17,9 +17,17 @@ If you find our work useful, please consider citing the following papers:
 
 Thanks!
 
-## Repository Outline
+## Process Outline
 
- **STEPS!! _ TO DO!!**
+![Process Flow](flowchart.JPG)
+
+The overall process is shown in the figure above. We start by training models that can predict shape and material fitness of objects. For details and code on the training process, see `training-models` folder. We use ESF features of point clouds as input to the shape prediction models, and SCiO spectral readings as input to the material prediction models. For the extraction of these features see `feature-extraction` folder. Once the models are trained, they are saved in the `visual_score_prediction/pre-trained-models` folder. 
+
+To test our tool construction approach, we use a dataset of point clouds of 58 objects (see `Dataset` folder). We extract ESF features and SCiO features for each of these, and save them in the `visual_score_prediction/pre-extracted-features` folder. Then `score_predict.py` uses the pre-trained models and features to compute shape and material scores for each of the 58 objects, and save them onto csv files. These csv files are saved in the `tool_construction_taskPlanner/src/models` folder. 
+
+Once the csv files are saved, the tool construction algorithm (see `tool_construction_taskPlanner/src`), takes the csv files as input along with task definitions in PDDL. The problem and domain definitions for the different tasks used for testing are available in the `tool_construction_taskPlanner/tests` folder. Our approach then generates a task plan that involves constructing the missing tool required for the task. 
+
+## Repository Outline
 
 This repository has the following folders:
 - tool_construction_taskPlanner
