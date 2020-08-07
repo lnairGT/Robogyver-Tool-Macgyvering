@@ -1,4 +1,4 @@
-# Autonomous Tool Macgyvering for Inventive Problem Solving (Thesis Work)
+# Robogyver: Autonomous Tool Macgyvering for Inventive Problem Solving (Thesis Work)
 
 **Advisor**: Dr. Sonia Chernova, Robot Autonomy and Interactive Learning ([RAIL](http://rail.gatech.edu/)) lab
 
