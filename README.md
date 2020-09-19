@@ -12,8 +12,8 @@ This repository contains code and datasets that were developed for my Ph.D. thes
 
 If you find our work useful, please consider citing the following papers:
 
-- **Nair, Lakshmi, et al. "Autonomous Tool Construction Using Part Shape and Attachment Prediction."** Robotics: Science and Systems (RSS). 2019.
-- **Nair, Lakshmi, Jonathan Balloch, and Sonia Chernova. "Tool macgyvering: Tool construction using geometric reasoning."** 2019 International Conference on Robotics and Automation (ICRA). IEEE, 2019.
+- **Lakshmi Nair et al. "Autonomous Tool Construction Using Part Shape and Attachment Prediction."** Robotics: Science and Systems (RSS). 2019.
+- **Lakshmi Nair, Jonathan Balloch, and Sonia Chernova. "Tool macgyvering: Tool construction using geometric reasoning."** 2019 International Conference on Robotics and Automation (ICRA). IEEE, 2019.
 
 Thanks!
 
@@ -81,8 +81,8 @@ Here are some of the tools constructed by our approach. Accuracy indicates the n
 
 ![Tools constructed by our work](tool_collage.png)
 
-**Nair2019a** - Nair, Lakshmi, Jonathan Balloch, and Sonia Chernova. "Tool macgyvering: Tool construction using geometric reasoning." 2019 International Conference on Robotics and Automation (ICRA). IEEE, 2019.
+**Nair2019a** - Lakshmi Nair, Jonathan Balloch, and Sonia Chernova. "Tool macgyvering: Tool construction using geometric reasoning." 2019 International Conference on Robotics and Automation (ICRA). IEEE, 2019.
 
-**Nair 2019b** - Nair, Lakshmi, et al. "Autonomous Tool Construction Using Part Shape and Attachment Prediction." Robotics: Science and Systems. 2019.
+**Nair 2019b** - Lakshmi Nair et al. "Autonomous Tool Construction Using Part Shape and Attachment Prediction." Robotics: Science and Systems. 2019.
 
-**Current** - Latest work on tool construction (using ESF features for shape, SCiO for materials, and attachment predictions for the final tool construction pipeline)
+**Current** - Lakshmi Nair, Nithin Shrivatsav, and Sonia Chernova. "Tool macgyvering: A novel framework for combining tool substitution and construction"
