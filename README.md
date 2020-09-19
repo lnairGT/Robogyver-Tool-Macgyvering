@@ -85,4 +85,4 @@ Here are some of the tools constructed by our approach. Accuracy indicates the n
 
 **Nair 2019b** - Lakshmi Nair et al. "Autonomous Tool Construction Using Part Shape and Attachment Prediction." Robotics: Science and Systems. 2019.
 
-**Current** - Lakshmi Nair, Nithin Shrivatsav, and Sonia Chernova. "Tool macgyvering: A novel framework for combining tool substitution and construction"
+**Current** - Lakshmi Nair, Nithin Shrivatsav, and Sonia Chernova. "Tool macgyvering: A novel framework for combining tool substitution and construction". 2020.
